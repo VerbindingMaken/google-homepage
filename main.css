@@ -1,0 +1,19 @@
+html {
+	font-size: 62.5%; /* 10px bij standaard browser instelling */
+	box-sizing: border-box; /* Hoogte en breedte die je opgeeft is altijd met rand en padding */
+	margin: 0;
+	padding: 0;
+}
+
+*, *::before, *::after {
+		box-sizing: inherit;
+	}
+
+header {
+    background-color: darkgray;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    min-height: 4rem;
+	width: 100%;
+}
