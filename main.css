@@ -11,6 +11,10 @@ html {
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.4rem;
+	color: ##444;
+}
+button, a {
+	color: #444;
 }
 /* HEADER layout */
 
@@ -36,7 +40,6 @@ nav a {
 	margin-right: 3.2rem;
 	align-self: center;
 	text-decoration: none;
-	color: #444;
 }
 nav a img {
 	align-self: center;
@@ -56,6 +59,42 @@ nav a:hover {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-content: center;
+}
+
+/* FORM layout */
+#google-form {
+	display: flex;
+	flex-flow: column;
+	justify-items: space-between;
+	align-items: center;
+	width: 40%;
+}
+
+#google-form label {
+	width: 50%;
+	margin-bottom: 3rem;
+}
+#google-form input {
+	background: url(search_black_24dp.svg) no-repeat 1rem white;
+	padding: .5rem 4.8rem .5rem 4.8rem;
+	width: 100%;
+	height: 4.8rem;
+	margin-bottom: 2rem;
+	border-radius: 2.4rem;
+	border: solid 1px #AAA;
+}
+#search-submit {
+	width: 50%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+#search-submit button {
+	padding: .6rem 1.1rem;
+	border: none;
+	border-radius: .2rem;
+	background: #efefef;
+
 }
 
 /* FOOTER layout */
