@@ -12,6 +12,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.4rem;
 }
+/* HEADER layout */
 
 header {
     background-color: darkgray;
@@ -44,4 +45,23 @@ nav a img {
 }
 nav a:hover {
 	text-decoration: underline;
+}
+/* MAIN layout */
+#main-container {
+	margin: 0 auto;
+	width: 100%;
+	min-height: 80vh;
+	background-color: lightgray;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+/* FOOTER layout */
+#footer-container {
+	margin: 0 auto;
+	width: 100%;
+	min-height: 20vh;
+	background-color: darkgray;
 }
