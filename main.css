@@ -1,29 +1,32 @@
 html {
 	font-size: 62.5%; /* 10px bij standaard browser instelling */
 	box-sizing: border-box; /* Hoogte en breedte die je opgeeft is altijd met rand en padding */
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 }
 
 *, *::before, *::after {
-		box-sizing: inherit;
+	box-sizing: inherit;
 	}
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.4rem;
-	color: ##444;
-}
-button, a {
 	color: #444;
+}
+a {
+	color: #444;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
 }
 /* HEADER layout */
 
 header {
-    background-color: darkgray;
     position: fixed;
     top: 0px;
     left: 0px;
-    min-height: 4rem;
+    min-height: 6rem;
 	width: 100%;
 	display: flex;
 	flex-flow: row wrap;
@@ -37,24 +40,23 @@ nav {
 
 }
 nav a {
-	margin-right: 3.2rem;
+	margin-right: 2.4rem;
 	align-self: center;
-	text-decoration: none;
 }
 nav a img {
 	align-self: center;
 	border-radius: 50%;
 	height: 3rem;
 }
-nav a:hover {
-	text-decoration: underline;
-}
+
 /* MAIN layout */
+main {
+	margin: 0px;
+}
 #main-container {
 	margin: 0 auto;
 	width: 100%;
 	min-height: 80vh;
-	background-color: lightgray;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -82,6 +84,15 @@ nav a:hover {
 	margin-bottom: 2rem;
 	border-radius: 2.4rem;
 	border: solid 1px #AAA;
+	border-image: none;
+	color: #444;
+	caret-color: #444;
+	overflow: scroll;
+}
+#google-form input:hover,
+#google-form input:focus,
+#google-form button:hover {
+	box-shadow: 0 0 6px .5px #444;
 }
 #search-submit {
 	width: 50%;
@@ -98,9 +109,42 @@ nav a:hover {
 }
 
 /* FOOTER layout */
+footer {
+	position: fixed;
+    bottom: 0px;
+    left: 0px;
+	width: 100%;
+	block-size: 10rem;
+	background-color: #efefef;
+
+}
 #footer-container {
 	margin: 0 auto;
 	width: 100%;
 	min-height: 20vh;
-	background-color: darkgray;
+	display: flex;
+	flex-flow: column;
+	align-content: center;
 }
+#footer-container p {
+	margin: 0 2.4rem;
+	padding: 1.6rem 0;
+	border-bottom: 1px solid #444;
+}
+#footer-bottom-middle a {
+	background: url(blad-google.png) no-repeat left;
+	background-size: 1.2rem;
+	padding-left: 2rem;
+}
+
+#footer-bottom {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 1.6rem 0;
+
+}
+#footer-bottom a {
+	margin: 0 2.4rem;	
+}
+
